@@ -1,0 +1,771 @@
+@font-face {
+    font-family: VCR-OSD-MONO;
+    src: url('../sources/font/VCR-OSD-MONO.ttf')
+}
+@font-face {
+    font-family: CONSOLAZ;
+    src: url('../sources/font/CONSOLAZ.ttf')
+}
+@font-face {
+    font-family: I-pixel-u;
+    src: url('../sources/font/I-pixel-u.ttf')
+}
+@font-face {
+    font-family: PoiretOne-Regular;
+    src: url('../sources/font/PoiretOne-Regular.ttf')
+}
+body {
+    background-color: #f3f2f0;
+    max-width: 1920px;
+    text-align: center;
+    width: 100%;
+}
+h1 {
+    color: white;
+    font-family: VCR-OSD-MONO;
+    font-size: 1.6em;
+    font-weight: 200;
+    padding: 13px 20px 15px;
+    margin-top: 1px;
+    margin-left: -50px;
+}
+h2 {
+    color: black;
+    font-family: VCR-OSD-MONO;
+    margin: 80px 0 30px;
+}
+        /*---------// ** HEADER ** //----------*/
+
+/* HOVERABLE DROPDOWN >> https://www.w3schools.com/howto/howto_css_dropdown.asp */
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background-color: #f3f2f0;
+}
+.dropdown {
+  display: none;
+  position: relative;
+  /*display: inline-block;*/
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1; 
+}
+.dropdown-content a {
+  color: black;
+  padding: 2px 16px;
+  text-decoration: none;
+  display: block;
+}
+.nav-title-bis {
+    border: 3px solid black;
+    box-shadow: 2px 4px 3px #3b3a3a;
+    width: 300px;
+    height: 20px;
+    margin: 10px 2px ;
+    padding: 10px;
+    font-family: I pixel u;;
+    text-align: center;
+    background-color: #f3f2f0;
+    }
+.dropdown:hover .dropdown-content {display: block; margin-left: 35%}
+/* Fin */ 
+
+.nav img {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    }
+.nav {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: -moz-box;
+    display: flex;  
+    flex-direction: row;
+    /* justify-content: center; */
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    width: 1920px;
+}
+.nom-title {
+    width: 1300px;
+    margin: -90px 0 -180px;
+    height: auto;
+    text-align: right;
+}
+.nav-title {
+    border: 3px solid black;
+    box-shadow: 2px 4px 3px #3b3a3a;
+    width: 220px;
+    height: 20px;
+    margin: 10px 2px ;
+    padding: 10px;
+    font-family: I pixel u;;
+    text-align: center;
+    background-color: #f3f2f0;
+    }
+/*---Image---*/
+.portrait img {
+    width: auto;
+    height: 445px;
+    border: 6px outset #c6c6c6;
+}
+/*----Fenêtre----*/
+.text-fenetre {
+    padding-left: 50px;
+    font-family: I pixel u;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+}
+.text-fenetre p {
+    line-height: 30%;
+}
+.text-fenetre li{
+    list-style: none;
+}
+
+.dossier-competences {
+    border: 2px inset white;
+    padding-left: 30px;
+    width: 610px;
+    height: 200px;
+}
+.list-competences {
+    line-height: 150%;
+    margin-left: 130px;
+}
+.fiche-technique {
+    position: relative;
+    z-index: 2;
+    margin-left: 30px;
+    text-align: justify;
+    font-size: 1.3em;
+}
+.fiche-technique-ensemble {
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: -moz-box;
+    display: flex; 
+    flex-direction: row;
+    flex-direction: -webkit-row;
+    justify-content:center;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 1100px;
+}
+        /*---------// ** MAIN ** //----------*/
+   
+/*--Experiences--*/
+.experiences {
+    background-image: url(../sources/img/bg-noir-1.png);
+    background-size: cover;
+    width: 100%;
+    height: 870px;
+    margin: 90px 0;
+}
+.title-experiences {
+    margin-top: 20px;
+    height: 70px;
+}
+.img-logo-job {
+    width: 1200px;
+    height: auto;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: -moz-box;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.img-logo-job img{
+    margin: 20px; 
+}
+/*--Formation--*/
+.title-formations {
+    margin: 75px;
+    height: 45px;
+}
+.formation {
+    background-image: url(../sources/img/bg-etoile.png);
+    background-size:cover;
+    width: 1070px;
+    height: 1190px;
+    color: white;
+    font-family: CONSOLAS;
+    font-size: 1.2rem;
+    margin-bottom: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list-job {
+    text-align: justify;
+    margin: -20px 0 0 120px;
+    line-height: 50%
+}
+.list-job ul {
+    margin-bottom: 38px;
+}
+.list-job li {
+    list-style: none;
+    margin-left: -50px;
+}
+.list-job p{
+    margin-left: 200px;
+}
+.surligne {
+    text-decoration: underline;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.date {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+/*--Compétences Informatique--*/
+.title-competences {
+    height: 110px;
+    margin: 0 340px 30px;
+}
+.competences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.competences img:last-of-type {
+    width: 850px;
+}
+/*--Portfolio--*/
+.portfolio {
+    margin-bottom: 130px;
+    position: relative;
+    z-index: 1;
+}
+.portfolio img {
+    width: 100%;
+}
+.lien-portfolio img {
+    width: 500px;
+}
+.lien-portfolio {
+    width: 1159px;
+    position: absolute;
+    z-index: 2;
+    top: 231px;
+}
+.bg-violet {
+    display: none;
+}
+/*--Contact--*/
+.title-contact {
+    height: 50px;
+    margin: 130px 0 -100px -760px;
+}
+.groupe-formulaire {
+    width: 700px;
+    background-color: palevioletred;
+}
+.contact {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-left: 18px;
+}
+.adresse {
+    margin-top: 220px;
+}
+.adresse img {
+    height: 315px;
+}
+.adresse ul{
+    width: 250px;
+    /*height: auto;*/
+    color: #ff7500;
+    font-family: VCR OSD MONO;
+    font-size: 1.25em;
+    text-align:start;
+    position: relative;
+    z-index: 4;
+    top: -260px;
+    left: 230px;
+    list-style-type: none;
+}
+.enveloppe-ouverte {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    display: -webkit-box;   
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
+    display: -moz-box;
+    flex-wrap: wrap;
+}
+.enveloppe-ouverte textarea {
+    width: 500px;
+    height: 184px;
+    margin: 33px 82px 10px 56px;
+    padding: 7px;
+    border: 10px solid black;
+    font-family: VCR OSD MONO;
+    font-size: 1.2em;
+}
+.enveloppe-ouverte img {
+    width: 615px;
+    margin: -78px 30px;
+    position: absolute;
+    z-index: 1;
+}
+.formulaire {
+    width: 672px;
+    height: 500px;
+    position: relative;
+    z-index: 2;
+    top: 90px;
+}
+.haut-enveloppe input {
+    width: 320px;
+    height: 30px;
+    margin: 5px 0 8px 3px;
+    padding-left: 10px;
+    border: 8px solid black;
+    font-family: VCR OSD MONO;
+    font-size: 1.25em;
+}
+.selection-envoyer {
+    width: 150px;
+    height: 40px;
+    margin-left: 375px;
+    background-color: black;
+    color: white;
+    font-size: 1.25em;
+    font-family: VCR OSD MONO;
+}
+        /*---------// ** FOOTER ** //----------*/
+footer{
+    height: 70px;
+    margin-top: 120px;
+    background-color: #ff7500;
+    font-family: VCR OSD MONO;
+    color: white;
+    padding: 10px;
+}
+
+/*----------             ---***---             ----------! 
+        --------- // **MEDIA QUERIES** //---------*/
+
+/* ------------Mobile----------- */
+@media screen and (min-width: 320px) and (max-width: 414px) {
+body {width: 100%; margin-left: 50px;}
+    h1 {
+        font-size: 1.2rem;
+        margin: 7px -20px;
+        /*----HEAD----*/
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      position: absolute;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {display: block; margin-left: 0%}
+    .nav-title-bis {
+    border: 3px solid black;
+    width: 200px;
+    height: 20px;
+    margin: 10px 2px ;
+    padding: 10px;
+    font-family: I pixel u;;
+    text-align: center;
+    background-color: #f3f2f0;
+    }
+    .nav {
+        display: none;
+    }
+    .nom-title {
+        width: 120%;
+        height: auto;
+    }    
+    .portrait img {
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+    }
+    .fiche-technique-ensemble {
+        display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: -moz-box;
+        display: flex; 
+        flex-direction: column;
+        width: 80%;
+    }
+    .fiche-technique img{
+        margin: 10px -60px;
+        width: 140%;
+        height: 290px;
+    }
+    .text-fenetre {
+        font-size: 0.85rem;
+        margin-left: -90px
+    }
+    .dossier-competences {
+        width: 100%;
+        height: 125px;
+        margin: 0 auto;
+        /*margin-left: 0%*/
+    } 
+    .list-competences {
+        margin-left: -60px;
+        font-size: 0.85rem;
+    }
+    .dossier-competences p {
+        margin-left: -20px;
+    }
+    .fiche-technique {
+        display: block;
+        width: 100%;
+    }
+        /*----EXPÉRIENCES----*/
+    .experiences {
+        width: 120%;
+        margin-top: 50px;
+        background-image: url(../sources/img/bg-noir-1.png);
+        height: 100%;
+    }
+    .title-experiences {
+        width: 70%;
+        height: auto;
+    }
+    .img-logo-job {
+        width: 100%;
+        /*margin: 20px;*/
+        display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: -moz-box;
+        display: flex; 
+        margin: 0 auto;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .img-logo-job img {
+        width: 70%;
+        margin: 10px 0 10px 50px;
+        }
+        /*----FORMATIONS----*/
+    .formation {
+        width: 120%;
+        height: 1100px;
+        margin: 0 auto;
+        padding-left: -20px;
+        margin-top: -50px;
+    }
+    .title-formations {
+        width: 80%; 
+        height: auto;
+        text-align: justify;
+        margin-top: 70px;
+        margin-left: 45px;
+    }
+    
+    .list-job {
+        margin: -60px -10px 0 -120px;
+        font-size: 0.8rem;
+        line-height: 100%;
+        text-align: start;
+    }
+    .list-job li {
+        list-style: none;
+        margin-left: 150px;
+    }
+    .list-job p{
+        width: 90%;
+        margin-left: 0px;
+    }
+        /*----COMPETENCES INFORMATIQUE----*/
+    .competences {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .title-competences {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin: 50px 0 -60px 50px;
+    }
+    .competences img:last-of-type{
+        width: 130%;
+        margin: 70px 0 70px;
+    }
+        /*----PORTFOLIO----*/  
+    .portfolio {
+        width: 130%;
+        height: auto;
+        margin-bottom: -130px;
+        margin-top: 40px
+    }
+    .bg-violet {
+        display: block;
+        margin: 0 auto;
+        height: 200px;
+        margin-top: -20px;
+    }
+    .title-portfolio {
+        display: none;
+    }
+    .lien-portfolio img{
+        width: 70%;
+    }
+    .lien-portfolio {
+        width: 100%;
+        margin: 0 auto;
+        top: 70px;
+        left: 0;
+    }
+        /*----CONTACT----*/
+    .contact {
+        width: 100%;
+    }
+    .adresse img {
+        display: none;
+    }
+    .title-contact {
+        width: 100%;
+        height: auto;
+        margin: 250px 0 -110px 50px;
+    }
+    .contact ul {
+        margin: 200px -350px 0;
+    }
+    .enveloppe-ouverte {
+        width: 150%;
+        margin: 0 auto;
+    }
+    .enveloppe-ouverte img {
+        display: none;
+        margin-top: -90px;
+    }
+    .formulaire {
+        width: 120%;
+        margin-top: -300px
+    }
+    .enveloppe-ouverte textarea {
+        margin-left: 110px;
+        padding: 10px;
+        width: 300px;
+        margin-top: -70px;
+    }
+    .haut-enveloppe {
+        margin-left: -60px;
+    }
+    .selection-envoyer {
+        width: 150px;
+        height: 40px;
+        margin-top: -50px;
+        margin-left: 300px;
+    }
+        /*----FOOTER----*/
+    footer{
+        width: 150%;
+        height: auto;
+        margin-top: 200px;
+        padding: 10px;
+        margin-left: -50px;
+    }    
+}
+
+/* ------------Tablette----------- */
+@media (min-width: 415px) and (max-width: 768px) {
+  body {width: 100%;margin-left: 90px; margin-right: -90px}
+    
+   .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+       
+    }
+    .nav-title-bis {
+        border: 3px solid black;
+        box-shadow: 2px 4px 3px #3b3a3a;
+        width: 200px;
+        height: 20px;
+        margin: 10px 2px ;
+        padding: 10px;
+        font-family: I pixel u;;
+        text-align: center;
+        background-color: #f3f2f0;
+    }
+    .dropdown:hover .dropdown-content {display: block; margin-left: 35%}
+    .nav {
+        display: none;
+    }
+    .nom-title {
+        width: 125%;
+        height: auto;
+        position:inherit
+    }    
+    .portrait img {
+        width: 100%;
+        height: auto;
+        margin-top: 80px;
+    }
+    .fiche-technique-ensemble {
+        width: 100%;
+    }
+    .fiche-technique img{
+        margin: 10px -60px;
+        width: 140%;
+        height: 290px;
+        margin: 80px 0;
+    }
+    h1 {
+        margin-top: 18px;
+        padding: 0 5px 0 20px;
+    }
+    .text-fenetre {
+        font-size: 0.9rem;
+        margin-left: -80px;
+        margin-top: -10px;
+        margin: 70px 0;
+    }
+    .dossier-competences {
+        width: 125%;
+        height: 125px;
+        margin: 0 auto;
+    } 
+    .list-competences {
+        margin-left: -20px;
+        font-size: 0.85rem;
+        width: 80%;
+    }
+    .dossier-competences p {
+        margin-left: -20px;
+    }
+    .fiche-technique {
+        display: block;
+        width: 100%;
+    }
+        /*----EXPÉRIENCES----*/
+    .experiences {
+        width: 120%;
+        margin-top: 50px;
+        background-image: url(../sources/img/bg-noir-1.png);
+        height: 100%;
+    }
+    .title-experiences {
+        width: 70%;
+        height: auto;
+    }
+    .img-logo-job {
+        width: 100%;
+        margin: 0 auto;
+        margin: 30px 0;
+    }
+    .img-logo-job img {
+        width: 70%;
+        margin: 10px 0 10px 50px;
+        padding-left: 60px;
+        }
+        /*----FORMATIONS----*/
+    .formation {
+        width: 120%;
+        height: 1480px;
+        margin: 0 auto;
+        padding-left: -20px;
+        margin-top: -70px;
+    }
+    .title-formations {
+        width: 70%; 
+        height: auto;
+        text-align: justify;
+        margin-top: 70px;
+        margin-left: 45px;
+    }
+    
+    .list-job {
+        margin: -20px -10px 0 -120px;
+        font-size: 1.2rem;
+        line-height: 100%;
+        text-align: start;
+    }
+    .list-job li {
+        list-style: none;
+        margin-left: 250px;
+    }
+    .list-job p{
+        width: 90%;
+        margin-left: 160px;
+    }
+        /*----COMPETENCES INFORMATIQUE----*/
+    .competences {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .title-competences {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        margin: 80px 0 -50px 150px;
+    }
+    .competences img:last-of-type{
+        width: 130%;
+        margin: 70px 0 120px -35px;
+    }
+        /*----PORTFOLIO----*/  
+    .portfolio {
+        width: 140%;
+        height: auto;
+        margin-bottom: -130px;
+        margin-top: 40px;
+        margin-left: -75px
+    }
+    .bg-violet {
+        display: block;
+        margin: 0 auto;
+        margin-top: -20px;
+    }
+    .title-portfolio {
+        display: none;
+    }
+    .lien-portfolio img{
+        width: 80%;
+    }
+    .lien-portfolio {
+        width: 90%;
+        margin: 0 auto;
+        top: 147px;
+        left: 75px;
+    }
+        /*----CONTACT----*/
+    .contact {
+        width: 100%;
+        margin-left: 120px
+    }
+    .title-contact {
+        width: 70%;
+        height: auto;
+        margin: 250px 0 -150px 220px;
+    }
+
+        /*----FOOTER----*/
+    footer{
+        width: 142%;
+        height: auto;
+        padding: 10px;
+        margin: 850px 0 180px -99px;
+    }   
+}

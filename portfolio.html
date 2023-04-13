@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+   <link rel="icon" href="sources/img/tete-carre.ico">
+    <link rel="stylesheet" href="css/styles.css">
+	<style>
+		body {
+			background-image: url(sources/img/bg-noir-1.png);
+		}
+        .wrapper img {
+            border: 6px outset #c6c6c6;
+            width: 140px;
+        }
+        .titre-portfolio {
+            margin-top: 130px;
+        }
+        /*Flexbox to create a responsive layout*/ /* --- Site >>> https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+        /* ------ PARTIE 1 ------*/
+        .row {
+          display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+          display: -ms-flexbox;  /* TWEENER - IE 10 */
+          display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+          display: -moz-box;
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 222px;
+          display: -webkit-background-size 970px;
+        }
+        /* Create four equal columns that sits next to each other */
+        .column {
+          flex: 25%;
+          max-width: 50%;
+        }
+        .column img {
+          margin-top: 8px;
+          width: 90%;
+        }
+        .column1 {
+          flex: 25%;
+          max-width: 50%;
+          margin-right: 10px
+        }
+        .column1 img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+        /* Responsive layout - makes a two column-layout instead of four columns 
+        @media screen and (max-width: 800px) {
+          .column {
+          flex: 50%;
+          max-width: 50%;
+          }
+        }
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+        @media screen and (max-width: 600px) {
+          .column {
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+        h2 {
+            text-align: left;
+            margin-left: 240px;*/
+        }
+        /*------ PARTIE 2------*/
+        .dossier-maquettes {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items:center;
+          padding: 0 222px;
+          width: 1500px;
+          margin: 0 auto;
+        }
+        .maquettes img {
+          width: 330px;
+          margin-right: 5px;     
+        }
+        /*------ PARTIE 3------*/
+        .dossier-logos {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 1520px;
+            margin: auto
+        }    
+        .logos img {
+          margin: 5.2px;
+          width: 10%;
+        }
+        /*------ PARTIE 4------*/
+        .graphisme {
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           width: 1480px;
+           margin: 0 auto; 
+        }
+
+	</style>
+</head>
+<body>
+        <!-- NAV -->
+       <header>
+            <div class="nav">
+               <a href="index.html#acceuil"><img src="sources/img/home.png" alt="lien home"></a>
+                <p class="nav-title"><a href="experiences.html">EXPÉRIENCES</a></p>
+                <p class="nav-title"><a href="index.html#formations">FORMATIONS</a></p> 
+                <p class="nav-title"><a href="index.html#competences">COMPÉTENCES</a></p>
+                <p class="nav-title"><a href="index.html#portfolio">PORTFOLIO</a></p>
+                <p class="nav-title"><a href="index.html#contact">CONTACT</a></p>
+            </div>
+        </header>
+
+        <!-- IAMAGES -->
+        <div class="titre-portfolio"><img src="sources/img/titres/portfolio2.png" alt="titre portfolio"></div>
+        
+    <div class="wrapper">
+        
+        <h2>Croquis</h2>
+            <div class="row">
+               <div class="column">
+                    <img src="sources/img/PORTFOLIO/CROQUIS/04.png" alt="">    
+                    <img src="sources/img/PORTFOLIO/CROQUIS/06.png" alt="">    
+                    <img src="sources/img/PORTFOLIO/CROQUIS/08.png" alt="">    
+                    <img src="sources/img/PORTFOLIO/CROQUIS/09.png" alt="">    
+                         
+               </div>
+               <div class="column1">
+                    <img src="sources/img/PORTFOLIO/CROQUIS/07.png" alt="">
+                    <img src="sources/img/PORTFOLIO/CROQUIS/10.png" alt="">
+                    <img src="sources/img/PORTFOLIO/CROQUIS/01.png" alt="">
+                    <img src="sources/img/PORTFOLIO/CROQUIS/03.png" alt="">
+                    <img src="sources/img/PORTFOLIO/CROQUIS/05.png" alt="">
+                    <img src="sources/img/PORTFOLIO/CROQUIS/12.png" alt="">
+                    <img src="sources/img/PORTFOLIO/CROQUIS/17.png" alt=""> 
+                    <img src="sources/img/PORTFOLIO/CROQUIS/19.png" alt=""> 
+                </div>
+                <div class="column">
+                    <img src="sources/img/PORTFOLIO/CROQUIS/11.png" alt="">   
+                    <img src="sources/img/PORTFOLIO/CROQUIS/14.png" alt="">    
+                    <img src="sources/img/PORTFOLIO/CROQUIS/15.png" alt="">    
+                    <img src="sources/img/PORTFOLIO/CROQUIS/16.png" alt="">
+                    <img src="sources/img/PORTFOLIO/CROQUIS/18.png" alt="">    
+                </div>
+                <div class="column2">
+                        
+                    
+                </div>
+            </div>
+        <h2>Maquettes Sites</h2>
+            <div class="dossier-maquettes">
+                <div class="maquettes">
+                    <img src="sources/img/PORTFOLIO/MAQUETTES/vent-sauvage.png" alt="">
+                    <img src="sources/img/PORTFOLIO/MAQUETTES/Marseille.png" alt="">
+                    <img src="sources/img/PORTFOLIO/MAQUETTES/NOsana.png" alt="">
+                    <img src="sources/img/PORTFOLIO/MAQUETTES/wild-school.png" alt="">
+                </div>
+            </div>
+        <h2>Graphisme</h2>
+            <div class="dossier-logos">
+                <div class="logos">
+                    <img src="sources/img/PORTFOLIO/LOGOS/01.png" alt="">
+                    <img src="sources/img/PORTFOLIO/LOGOS/02.png" alt="">
+                    <img src="sources/img/PORTFOLIO/LOGOS/03.png" alt="">
+                    <img src="sources/img/PORTFOLIO/LOGOS/04.png" alt="">
+                    <img src="sources/img/PORTFOLIO/LOGOS/05.png" alt="">
+                    <img src="sources/img/PORTFOLIO/LOGOS/07.png" alt="">
+                    <!--<img src="sources/img/PORTFOLIO/LOGOS/08.png" alt="">-->
+                    <img src="sources/img/PORTFOLIO/LOGOS/10.png" alt="">
+                    <img src="sources/img/PORTFOLIO/LOGOS/09.png" alt="">
+                </div>
+            </div><br>
+            <!--autres/* PARTIE 4*/reste du graphisme-->
+        
+            <div class="graphisme">
+                <div class="potrait">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/10.png" alt="" style="width: 23%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/14.png" alt="" style="width: 23%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/15.png" alt="" style="width: 23%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/19.png" alt="" style="width: 23%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/01.png" alt="" style="width: 23%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/02.png" alt="" style="width: 23%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/05.png" alt="" style="width: 23%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/06.png" alt="" style="width: 23%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/07.png" alt="" style="width: 23%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/08.png" alt="" style="width: 23%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/09.png" alt="" style="width: 23%">
+                </div> 
+                <div class="paysage">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/03.png" alt="" style="width: 32%">    
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/04.png" alt="" style="width: 32%">    
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/11.png" alt="" style="width: 32%">    
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/12.png" alt="" style="width: 32%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/13.png" alt="" style="width: 32%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/16.png" alt="" style="width: 32%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/17.png" alt="" style="width: 32%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/18.png" alt="" style="width: 32%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/20.png" alt="" style="width: 32%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/21.png" alt="" style="width: 32%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/24.png" alt="" style="width: 32%">
+                    <img src="sources/img/PORTFOLIO/GRAPHISME/23.png" alt="" style="width: 32%"> 
+               </div>
+            </div>
+    </div>
+
+</body>
+</html>
